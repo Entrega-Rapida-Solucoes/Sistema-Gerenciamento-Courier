@@ -1,0 +1,236 @@
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:12:19 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/es/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/es/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.9ms | Allocations: 636)
+Completed 200 OK in 23ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 6851)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:14:11 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms | Allocations: 2180)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:14:16 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 41)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:16:18 -0300
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:16:18 -0300
+Processing by RenderController#index as HTML
+Processing by RenderController#index as HTML
+Completed 204 No Content in 11ms (ActiveRecord: 0.0ms | Allocations: 2200)
+
+
+Completed 204 No Content in 9ms (ActiveRecord: 0.0ms | Allocations: 2051)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:20:16 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 6ms (ActiveRecord: 0.0ms | Allocations: 2180)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:20:20 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 41)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:21:32 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 30)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:28:29 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms | Allocations: 2180)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:28:33 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 41)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:32:33 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms | Allocations: 2180)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:34:26 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 5ms (ActiveRecord: 0.0ms | Allocations: 2180)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:35:05 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 41)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:37:38 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 5ms (ActiveRecord: 0.0ms | Allocations: 2180)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:37:49 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 41)
+
+
+Started GET "/index" for 127.0.0.1 at 2023-12-11 03:37:56 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/index.html" for 127.0.0.1 at 2023-12-11 03:38:01 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+Started GET "/index.html.erb" for 127.0.0.1 at 2023-12-11 03:38:04 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/index.html.erb"):
+  
+Started GET "/index.html.erb" for 127.0.0.1 at 2023-12-11 03:38:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/index.html.erb"):
+  
+Started GET "/index" for 127.0.0.1 at 2023-12-11 03:38:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/render/index" for 127.0.0.1 at 2023-12-11 03:38:24 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 35)
+
+
+Started GET "/rails/info/routes?path=index" for 127.0.0.1 at 2023-12-11 03:38:29 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"index"}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2785)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:39:53 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 51ms (ActiveRecord: 0.0ms | Allocations: 3031)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:41:32 -0300
+Processing by RenderController#index as HTML
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2327)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:41:40 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 104)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:43:12 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 6ms (ActiveRecord: 0.0ms | Allocations: 2177)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:43:41 -0300
+Processing by RenderController#index as HTML
+RenderController#index was called!
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 109)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:44:27 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 91)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:46:54 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 6ms (ActiveRecord: 0.0ms | Allocations: 2180)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:47:06 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 41)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:47:45 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 30)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:47:46 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 30)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:47:46 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 29)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:47:47 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 29)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:47:49 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 30)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:49:29 -0300
+Processing by WelcomeController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 92)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:49:35 -0300
+Processing by WelcomeController#index as HTML
+Completed 204 No Content in 7ms (ActiveRecord: 0.0ms | Allocations: 2180)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:51:20 -0300
+  
+ActionController::RoutingError (uninitialized constant WelcomeController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:51:34 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 137)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:51:35 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 30)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:51:35 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 30)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:51:35 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 29)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:51:36 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 30)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:51:36 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 29)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:51:47 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms | Allocations: 2180)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 03:54:47 -0300
+Processing by RenderController#index as HTML
+Entering RenderController#index
+Exiting RenderController#index
+Completed 204 No Content in 5ms (ActiveRecord: 0.0ms | Allocations: 2219)
+
+
