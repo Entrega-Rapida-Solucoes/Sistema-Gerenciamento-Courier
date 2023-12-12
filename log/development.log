@@ -234,3 +234,34 @@ Exiting RenderController#index
 Completed 204 No Content in 5ms (ActiveRecord: 0.0ms | Allocations: 2219)
 
 
+Started GET "/" for 127.0.0.1 at 2023-12-11 12:20:55 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 6ms (ActiveRecord: 0.0ms | Allocations: 2180)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 12:21:00 -0300
+Processing by RenderController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 41)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-11 21:10:57 -0300
+  
+ActionController::RoutingError (uninitialized constant RenderController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-12-11 21:10:58 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2023-12-11 21:12:02 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/es/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/es/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.0ms | Allocations: 528)
+Completed 200 OK in 16ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 4729)
+
+
