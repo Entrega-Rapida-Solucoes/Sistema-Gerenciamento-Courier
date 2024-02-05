@@ -1,3 +1,6 @@
 class Remetente < ApplicationRecord
-  belongs_to :endereco
+  has_one :endereco, dependent: :destroy
+  accepts_nested_attributes_for :endereco, allow_destroy: true
+
+
 end

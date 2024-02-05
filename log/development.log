@@ -235,3 +235,100 @@ Processing by EnderecosController#new as HTML
 Completed 200 OK in 36ms (Views: 18.3ms | ActiveRecord: 0.5ms | Allocations: 22360)
 
 
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2024-02-04 21:29:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.0ms | Allocations: 952)
+Completed 200 OK in 94ms (Views: 24.5ms | ActiveRecord: 0.0ms | Allocations: 11117)
+
+
+Started GET "/encomendas/new" for 127.0.0.1 at 2024-02-04 21:29:26 -0300
+Processing by EncomendasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering encomendas/new.html.erb within layouts/application
+  Rendered encomendas/_form.html.erb (Duration: 47.7ms | Allocations: 5161)
+  Rendered encomendas/new.html.erb within layouts/application (Duration: 51.1ms | Allocations: 5622)
+  Rendered layout layouts/application.html.erb (Duration: 410.3ms | Allocations: 96316)
+Completed 200 OK in 458ms (Views: 415.6ms | ActiveRecord: 0.7ms | Allocations: 117641)
+
+
+Started POST "/encomendas" for 127.0.0.1 at 2024-02-04 21:29:56 -0300
+Processing by EncomendasController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "encomenda"=>{"peso"=>"12", "status"=>"andamento", "data_entrega"=>"", "destinatario_id"=>"1", "remetente_id"=>"1"}, "commit"=>"Create Encomenda"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/encomendas_controller.rb:27:in `block in create'
+  [1m[36mDestinatario Load (0.1ms)[0m  [1m[34mSELECT "destinatarios".* FROM "destinatarios" WHERE "destinatarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/encomendas_controller.rb:27:in `block in create'
+  [1m[36mRemetente Load (0.1ms)[0m  [1m[34mSELECT "remetentes".* FROM "remetentes" WHERE "remetentes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/encomendas_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/encomendas_controller.rb:27:in `block in create'
+  Rendering layout layouts/application.html.erb
+  Rendering encomendas/new.html.erb within layouts/application
+  Rendered encomendas/_form.html.erb (Duration: 2.5ms | Allocations: 3341)
+  Rendered encomendas/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 3436)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 5017)
+Completed 422 Unprocessable Entity in 100ms (Views: 7.4ms | ActiveRecord: 1.3ms | Allocations: 24296)
+
+
+Started POST "/encomendas" for 127.0.0.1 at 2024-02-04 21:30:20 -0300
+Processing by EncomendasController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "encomenda"=>{"peso"=>"12", "status"=>"Em_Transito", "data_entrega"=>"", "destinatario_id"=>"1", "remetente_id"=>"1"}, "commit"=>"Create Encomenda"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/encomendas_controller.rb:27:in `block in create'
+  [1m[36mDestinatario Load (0.1ms)[0m  [1m[34mSELECT "destinatarios".* FROM "destinatarios" WHERE "destinatarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/encomendas_controller.rb:27:in `block in create'
+  [1m[36mRemetente Load (0.0ms)[0m  [1m[34mSELECT "remetentes".* FROM "remetentes" WHERE "remetentes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/encomendas_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/encomendas_controller.rb:27:in `block in create'
+  Rendering layout layouts/application.html.erb
+  Rendering encomendas/new.html.erb within layouts/application
+  Rendered encomendas/_form.html.erb (Duration: 1.5ms | Allocations: 2181)
+  Rendered encomendas/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2268)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3735)
+Completed 422 Unprocessable Entity in 16ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 7728)
+
+
+Started GET "/destinatario/new" for 127.0.0.1 at 2024-02-04 21:30:39 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/destinatario/new"):
+  
+Started GET "/destinatarios/new" for 127.0.0.1 at 2024-02-04 21:30:46 -0300
+Processing by DestinatariosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering destinatarios/new.html.erb within layouts/application
+  Rendered destinatarios/_form.html.erb (Duration: 8.9ms | Allocations: 3239)
+  Rendered destinatarios/new.html.erb within layouts/application (Duration: 11.8ms | Allocations: 3668)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 5333)
+Completed 200 OK in 35ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 18168)
+
+

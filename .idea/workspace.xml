@@ -2,55 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff29221-2ed7-4c8a-816e-aec85b9da499" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Sistema-Gerenciamento-Courier.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Sistema-Gerenciamento-Courier.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ruby-version" beforeDir="false" afterPath="$PROJECT_DIR$/.ruby-version" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/Product Backlog.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/channels/application_cable/channel.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/channels/application_cable/channel.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/channels/application_cable/connection.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/channels/application_cable/connection.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/jobs/application_job.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/jobs/application_job.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mailers/application_mailer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/application_record.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/application_record.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/bundle" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bundle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/rails" beforeDir="false" afterPath="$PROJECT_DIR$/bin/rails" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/rake" beforeDir="false" afterPath="$PROJECT_DIR$/bin/rake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/render-build.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/render.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/setup" beforeDir="false" afterPath="$PROJECT_DIR$/bin/setup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ru" beforeDir="false" afterPath="$PROJECT_DIR$/config.ru" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/boot.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/boot.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cable.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/cable.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/credentials.yml.enc" beforeDir="false" afterPath="$PROJECT_DIR$/config/credentials.yml.enc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environment.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/cors.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/inflections.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/en.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/puma.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/puma.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/storage.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/storage.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/database.ci.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/encomendas_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/encomendas_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/destinatario.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/destinatario.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/encomenda.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/encomenda.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/endereco.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/endereco.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/funcionario.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/funcionario.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/remetente.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/remetente.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/encomendas/_encomenda.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/encomendas/_encomenda.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/encomendas/_encomenda.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/encomendas/_encomenda.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/encomendas/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/encomendas/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20240204233944_create_encomendas.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20240204233944_create_encomendas.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/channels/application_cable/connection_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/channels/application_cable/connection_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +141,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707088487101</updated>
       <workItem from="1707088488282" duration="1520000" />
-      <workItem from="1707090038711" duration="487000" />
+      <workItem from="1707090038711" duration="3042000" />
     </task>
     <servers />
   </component>
@@ -186,6 +149,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Sistema_Gerenciamento_Courier@Development__Sistema_Gerenciamento_Courier.rcov" NAME="Development: Sistema-Gerenciamento-Courier Coverage Results" MODIFIED="1707090241349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Sistema-Gerenciamento-Courier" />
+    <SUITE FILE_PATH="coverage/Sistema_Gerenciamento_Courier@Development__Sistema_Gerenciamento_Courier.rcov" NAME="Development: Sistema-Gerenciamento-Courier Coverage Results" MODIFIED="1707092950653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Sistema-Gerenciamento-Courier" />
   </component>
 </project>

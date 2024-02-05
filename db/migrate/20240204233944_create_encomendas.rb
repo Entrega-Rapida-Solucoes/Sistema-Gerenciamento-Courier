@@ -4,7 +4,6 @@ class CreateEncomendas < ActiveRecord::Migration[7.0]
       t.float :peso
       t.string :status
       t.date :data_entrega
-      t.references :endereco, null: false, foreign_key: true
       t.references :destinatario, null: false, foreign_key: true
       t.references :remetente, null: false, foreign_key: true
 
