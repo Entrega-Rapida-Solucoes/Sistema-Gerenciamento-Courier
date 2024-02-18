@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data_recebimento: 2024-02-18
+  funcionario: one
+  encomenda: one
+
+two:
+  data_recebimento: 2024-02-18
+  funcionario: two
+  encomenda: two

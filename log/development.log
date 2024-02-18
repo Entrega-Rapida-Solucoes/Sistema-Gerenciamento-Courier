@@ -2854,3 +2854,662 @@ Processing by EncomendasController#show as HTML
 Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.1ms | Allocations: 2801)
 
 
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRecebimentos (20240218210103)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "recebimentos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "data_recebimento" date, "funcionario_id" integer NOT NULL, "encomenda_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_ea78610e52"
+FOREIGN KEY ("funcionario_id")
+  REFERENCES "funcionarios" ("id")
+, CONSTRAINT "fk_rails_c8618ca7d0"
+FOREIGN KEY ("encomenda_id")
+  REFERENCES "encomendas" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_recebimentos_on_funcionario_id" ON "recebimentos" ("funcionario_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_recebimentos_on_encomenda_id" ON "recebimentos" ("encomenda_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240218210103"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/funcionarios/new" for 127.0.0.1 at 2024-02-18 18:28:42 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FuncionariosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/new.html.erb within layouts/application
+  Rendered funcionarios/_form.html.erb (Duration: 12.6ms | Allocations: 3173)
+  Rendered funcionarios/new.html.erb within layouts/application (Duration: 16.5ms | Allocations: 3592)
+  Rendered layout layouts/application.html.erb (Duration: 68.0ms | Allocations: 21142)
+Completed 200 OK in 143ms (Views: 76.1ms | ActiveRecord: 1.3ms | Allocations: 35957)
+
+
+Started GET "/funcionarios/new" for 127.0.0.1 at 2024-02-18 18:28:45 -0300
+Processing by FuncionariosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/new.html.erb within layouts/application
+  Rendered funcionarios/_form.html.erb (Duration: 3.6ms | Allocations: 1849)
+  Rendered funcionarios/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1936)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3413)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 3742)
+
+
+Started GET "/funcionarios" for 127.0.0.1 at 2024-02-18 18:28:48 -0300
+Processing by FuncionariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/index.html.erb within layouts/application
+  [1m[36mFuncionario Load (0.2ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios"[0m
+  ↳ app/views/funcionarios/index.html.erb:20
+  Rendered funcionarios/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1828)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3293)
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.2ms | Allocations: 3739)
+
+
+Started GET "/funcionarios/new" for 127.0.0.1 at 2024-02-18 18:28:54 -0300
+Processing by FuncionariosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/new.html.erb within layouts/application
+  Rendered funcionarios/_form.html.erb (Duration: 2.9ms | Allocations: 1846)
+  Rendered funcionarios/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1933)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 3406)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 3710)
+
+
+Started GET "/funcionarios/new" for 127.0.0.1 at 2024-02-18 18:28:55 -0300
+Processing by FuncionariosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/new.html.erb within layouts/application
+  Rendered funcionarios/_form.html.erb (Duration: 3.5ms | Allocations: 1846)
+  Rendered funcionarios/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1933)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3406)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 3710)
+
+
+Started POST "/funcionarios" for 127.0.0.1 at 2024-02-18 18:29:43 -0300
+Processing by FuncionariosController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "funcionario"=>{"nome"=>"Funcionario 1", "cargo"=>"gerente", "data_nascimento"=>"2016-03-03", "cpf"=>"523.654.698-89", "email"=>"fun@fun.com", "telefone"=>"87555555555"}, "commit"=>"Create Funcionario"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/funcionarios_controller.rb:42:in `block in create'
+  [1m[36mFuncionario Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "funcionarios" WHERE "funcionarios"."cpf" = ? LIMIT ?[0m  [["cpf", "523.654.698-89"], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:42:in `block in create'
+  [1m[36mFuncionario Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "funcionarios" WHERE "funcionarios"."email" = ? LIMIT ?[0m  [["email", "fun@fun.com"], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:42:in `block in create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/funcionarios_controller.rb:42:in `block in create'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/new.html.erb within layouts/application
+  Rendered funcionarios/_form.html.erb (Duration: 3.5ms | Allocations: 2149)
+  Rendered funcionarios/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2236)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3701)
+Completed 422 Unprocessable Entity in 53ms (Views: 13.1ms | ActiveRecord: 1.1ms | Allocations: 8111)
+
+
+Started POST "/funcionarios" for 127.0.0.1 at 2024-02-18 18:30:01 -0300
+Processing by FuncionariosController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "funcionario"=>{"nome"=>"Funcionario 1", "cargo"=>"gerente", "data_nascimento"=>"2016-03-03", "cpf"=>"523.654.698-89", "email"=>"fun@fun.com", "telefone"=>"87555555555"}, "commit"=>"Create Funcionario"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/funcionarios_controller.rb:42:in `block in create'
+  [1m[36mFuncionario Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "funcionarios" WHERE "funcionarios"."cpf" = ? LIMIT ?[0m  [["cpf", "523.654.698-89"], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:42:in `block in create'
+  [1m[36mFuncionario Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "funcionarios" WHERE "funcionarios"."email" = ? LIMIT ?[0m  [["email", "fun@fun.com"], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:42:in `block in create'
+  [1m[36mFuncionario Create (1.6ms)[0m  [1m[32mINSERT INTO "funcionarios" ("nome", "cargo", "data_nascimento", "cpf", "email", "telefone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nome", "Funcionario 1"], ["cargo", "gerente"], ["data_nascimento", "2016-03-03"], ["cpf", "523.654.698-89"], ["email", "fun@fun.com"], ["telefone", "87555555555"], ["created_at", "2024-02-18 21:30:02.542243"], ["updated_at", "2024-02-18 21:30:02.542243"]]
+  ↳ app/controllers/funcionarios_controller.rb:42:in `block in create'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/funcionarios_controller.rb:42:in `block in create'
+Redirected to http://127.0.0.1:3000/funcionarios/1
+Completed 302 Found in 50ms (ActiveRecord: 6.0ms | Allocations: 10787)
+
+
+Started GET "/funcionarios/1" for 127.0.0.1 at 2024-02-18 18:30:02 -0300
+Processing by FuncionariosController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mFuncionario Load (0.4ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:78:in `set_funcionario'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/show.html.erb within layouts/application
+  [1m[36mRecebimento Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ? LIMIT ?[0m  [["funcionario_id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:11
+  Rendered funcionarios/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2316)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 19545)
+Completed 200 OK in 78ms (Views: 33.8ms | ActiveRecord: 1.3ms | Allocations: 27949)
+
+
+Started GET "/funcionarios" for 127.0.0.1 at 2024-02-18 18:30:03 -0300
+Processing by FuncionariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/index.html.erb within layouts/application
+  [1m[36mFuncionario Load (0.3ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios"[0m
+  ↳ app/views/funcionarios/index.html.erb:20
+  Rendered funcionarios/_funcionario.html.erb (Duration: 2.3ms | Allocations: 443)
+  Rendered funcionarios/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1873)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 3342)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.3ms | Allocations: 3677)
+
+
+Started GET "/funcionarios" for 127.0.0.1 at 2024-02-18 18:30:08 -0300
+Processing by FuncionariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/index.html.erb within layouts/application
+  [1m[36mFuncionario Load (0.1ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios"[0m
+  ↳ app/views/funcionarios/index.html.erb:20
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered funcionarios/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1213)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2678)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.1ms | Allocations: 2988)
+
+
+Started GET "/funcionarios" for 127.0.0.1 at 2024-02-18 18:30:09 -0300
+Processing by FuncionariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/index.html.erb within layouts/application
+  [1m[36mFuncionario Load (0.1ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios"[0m
+  ↳ app/views/funcionarios/index.html.erb:20
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered funcionarios/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1177)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2642)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.1ms | Allocations: 2952)
+
+
+Started GET "/recebimentos" for 127.0.0.1 at 2024-02-18 18:30:22 -0300
+Processing by RecebimentosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recebimentos/index.html.erb within layouts/application
+  [1m[36mRecebimento Load (0.2ms)[0m  [1m[34mSELECT "recebimentos".* FROM "recebimentos"[0m
+  ↳ app/views/recebimentos/index.html.erb:6
+  Rendered recebimentos/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1403)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3090)
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 4311)
+
+
+Started GET "/recebimentos/new" for 127.0.0.1 at 2024-02-18 18:30:23 -0300
+Processing by RecebimentosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recebimentos/new.html.erb within layouts/application
+  Rendered recebimentos/_form.html.erb (Duration: 4.1ms | Allocations: 2095)
+  Rendered recebimentos/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2466)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3943)
+Completed 200 OK in 25ms (Views: 11.9ms | ActiveRecord: 0.4ms | Allocations: 14159)
+
+
+Started POST "/recebimentos" for 127.0.0.1 at 2024-02-18 18:30:31 -0300
+Processing by RecebimentosController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recebimento"=>{"data_recebimento"=>"2024-02-13", "funcionario_id"=>"1", "encomenda_id"=>"1"}, "commit"=>"Create Recebimento"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recebimentos_controller.rb:27:in `block in create'
+  [1m[36mFuncionario Load (0.1ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recebimentos_controller.rb:27:in `block in create'
+  [1m[36mEncomenda Load (0.1ms)[0m  [1m[34mSELECT "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recebimentos_controller.rb:27:in `block in create'
+  [1m[36mRecebimento Create (1.3ms)[0m  [1m[32mINSERT INTO "recebimentos" ("data_recebimento", "funcionario_id", "encomenda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["data_recebimento", "2024-02-13"], ["funcionario_id", 1], ["encomenda_id", 1], ["created_at", "2024-02-18 21:30:31.086278"], ["updated_at", "2024-02-18 21:30:31.086278"]]
+  ↳ app/controllers/recebimentos_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recebimentos_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/recebimentos/1
+Completed 302 Found in 32ms (ActiveRecord: 5.7ms | Allocations: 13462)
+
+
+Started GET "/recebimentos/1" for 127.0.0.1 at 2024-02-18 18:30:31 -0300
+Processing by RecebimentosController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mRecebimento Load (0.2ms)[0m  [1m[34mSELECT "recebimentos".* FROM "recebimentos" WHERE "recebimentos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recebimentos_controller.rb:63:in `set_recebimento'
+  Rendering layout layouts/application.html.erb
+  Rendering recebimentos/show.html.erb within layouts/application
+  Rendered recebimentos/_recebimento.html.erb (Duration: 1.8ms | Allocations: 325)
+  Rendered recebimentos/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1484)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3051)
+Completed 200 OK in 17ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 4582)
+
+
+Started GET "/recebimentos/1/edit" for 127.0.0.1 at 2024-02-18 18:30:32 -0300
+Processing by RecebimentosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecebimento Load (0.1ms)[0m  [1m[34mSELECT "recebimentos".* FROM "recebimentos" WHERE "recebimentos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recebimentos_controller.rb:63:in `set_recebimento'
+  Rendering layout layouts/application.html.erb
+  Rendering recebimentos/edit.html.erb within layouts/application
+  Rendered recebimentos/_form.html.erb (Duration: 2.4ms | Allocations: 1359)
+  Rendered recebimentos/edit.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1735)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3200)
+Completed 200 OK in 15ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 4014)
+
+
+Started GET "/recebimentos" for 127.0.0.1 at 2024-02-18 18:30:32 -0300
+Processing by RecebimentosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recebimentos/index.html.erb within layouts/application
+  [1m[36mRecebimento Load (0.1ms)[0m  [1m[34mSELECT "recebimentos".* FROM "recebimentos"[0m
+  ↳ app/views/recebimentos/index.html.erb:6
+  Rendered recebimentos/_recebimento.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered recebimentos/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 903)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2376)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 2675)
+
+
+Started GET "/funcionarios/new" for 127.0.0.1 at 2024-02-18 18:30:39 -0300
+Processing by FuncionariosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/new.html.erb within layouts/application
+  Rendered funcionarios/_form.html.erb (Duration: 1.6ms | Allocations: 1898)
+  Rendered funcionarios/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1987)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3460)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3769)
+
+
+Started GET "/funcionarios" for 127.0.0.1 at 2024-02-18 18:30:40 -0300
+Processing by FuncionariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/index.html.erb within layouts/application
+  [1m[36mFuncionario Load (0.1ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios"[0m
+  ↳ app/views/funcionarios/index.html.erb:20
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered funcionarios/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1177)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2642)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 2953)
+
+
+Started GET "/funcionarios/1" for 127.0.0.1 at 2024-02-18 18:30:40 -0300
+Processing by FuncionariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuncionario Load (0.1ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:78:in `set_funcionario'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/show.html.erb within layouts/application
+  [1m[36mRecebimento Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ? LIMIT ?[0m  [["funcionario_id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:11
+  [1m[36mRecebimento Load (0.1ms)[0m  [1m[34mSELECT "recebimentos".* FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ?[0m  [["funcionario_id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  [1m[36mEncomenda Load (0.6ms)[0m  [1m[34mSELECT "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  Rendered funcionarios/show.html.erb within layouts/application (Duration: 134.3ms | Allocations: 16164)
+  Rendered layout layouts/application.html.erb (Duration: 137.7ms | Allocations: 17749)
+Completed 200 OK in 142ms (Views: 137.7ms | ActiveRecord: 1.0ms | Allocations: 18679)
+
+
+Started GET "/funcionarios/new" for 127.0.0.1 at 2024-02-18 18:30:43 -0300
+Processing by FuncionariosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/new.html.erb within layouts/application
+  Rendered funcionarios/_form.html.erb (Duration: 1.6ms | Allocations: 1954)
+  Rendered funcionarios/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2045)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3520)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 3869)
+
+
+Started GET "/funcionarios/1" for 127.0.0.1 at 2024-02-18 18:30:44 -0300
+Processing by FuncionariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuncionario Load (0.2ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:78:in `set_funcionario'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/show.html.erb within layouts/application
+  [1m[36mRecebimento Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ? LIMIT ?[0m  [["funcionario_id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:11
+  [1m[36mRecebimento Load (0.2ms)[0m  [1m[34mSELECT "recebimentos".* FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ?[0m  [["funcionario_id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  [1m[36mEncomenda Load (0.1ms)[0m  [1m[34mSELECT "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  Rendered funcionarios/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2501)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3966)
+Completed 200 OK in 15ms (Views: 9.4ms | ActiveRecord: 0.7ms | Allocations: 4904)
+
+
+Started GET "/funcionarios/new" for 127.0.0.1 at 2024-02-18 18:30:44 -0300
+Processing by FuncionariosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/new.html.erb within layouts/application
+  Rendered funcionarios/_form.html.erb (Duration: 1.8ms | Allocations: 1855)
+  Rendered funcionarios/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1942)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3415)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 3719)
+
+
+Started POST "/funcionarios" for 127.0.0.1 at 2024-02-18 18:31:25 -0300
+Processing by FuncionariosController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "funcionario"=>{"nome"=>"Funcionario 2", "cargo"=>"teste", "data_nascimento"=>"2024-02-02", "cpf"=>"562.658.632-63", "email"=>"funnn@teste.com", "telefone"=>"87999996666"}, "commit"=>"Create Funcionario"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/funcionarios_controller.rb:42:in `block in create'
+  [1m[36mFuncionario Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "funcionarios" WHERE "funcionarios"."cpf" = ? LIMIT ?[0m  [["cpf", "562.658.632-63"], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:42:in `block in create'
+  [1m[36mFuncionario Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "funcionarios" WHERE "funcionarios"."email" = ? LIMIT ?[0m  [["email", "funnn@teste.com"], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:42:in `block in create'
+  [1m[36mFuncionario Create (1.0ms)[0m  [1m[32mINSERT INTO "funcionarios" ("nome", "cargo", "data_nascimento", "cpf", "email", "telefone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nome", "Funcionario 2"], ["cargo", "teste"], ["data_nascimento", "2024-02-02"], ["cpf", "562.658.632-63"], ["email", "funnn@teste.com"], ["telefone", "87999996666"], ["created_at", "2024-02-18 21:31:25.543908"], ["updated_at", "2024-02-18 21:31:25.543908"]]
+  ↳ app/controllers/funcionarios_controller.rb:42:in `block in create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/funcionarios_controller.rb:42:in `block in create'
+Redirected to http://127.0.0.1:3000/funcionarios/2
+Completed 302 Found in 13ms (ActiveRecord: 3.4ms | Allocations: 4083)
+
+
+Started GET "/funcionarios/2" for 127.0.0.1 at 2024-02-18 18:31:25 -0300
+Processing by FuncionariosController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mFuncionario Load (0.1ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:78:in `set_funcionario'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/show.html.erb within layouts/application
+  [1m[36mRecebimento Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ? LIMIT ?[0m  [["funcionario_id", 2], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:11
+  Rendered funcionarios/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1029)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2494)
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.4ms | Allocations: 3402)
+
+
+Started GET "/funcionarios" for 127.0.0.1 at 2024-02-18 18:31:26 -0300
+Processing by FuncionariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/index.html.erb within layouts/application
+  [1m[36mFuncionario Load (0.1ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios"[0m
+  ↳ app/views/funcionarios/index.html.erb:20
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.0ms | Allocations: 33)
+  Rendered funcionarios/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 1344)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 2813)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.1ms | Allocations: 3124)
+
+
+Started GET "/funcionarios?nome=funcionario+1&cpf=&commit=Buscar" for 127.0.0.1 at 2024-02-18 18:31:33 -0300
+Processing by FuncionariosController#index as HTML
+  Parameters: {"nome"=>"funcionario 1", "cpf"=>"", "commit"=>"Buscar"}
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/index.html.erb within layouts/application
+  [1m[36mFuncionario Load (0.2ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE (nome LIKE '%funcionario 1%')[0m
+  ↳ app/views/funcionarios/index.html.erb:20
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered funcionarios/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1271)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2736)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 3078)
+
+
+Started GET "/funcionarios?nome=funcionario+2&cpf=&commit=Buscar" for 127.0.0.1 at 2024-02-18 18:31:37 -0300
+Processing by FuncionariosController#index as HTML
+  Parameters: {"nome"=>"funcionario 2", "cpf"=>"", "commit"=>"Buscar"}
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/index.html.erb within layouts/application
+  [1m[36mFuncionario Load (0.3ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE (nome LIKE '%funcionario 2%')[0m
+  ↳ app/views/funcionarios/index.html.erb:20
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered funcionarios/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1240)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2705)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 3037)
+
+
+Started GET "/funcionarios/2" for 127.0.0.1 at 2024-02-18 18:31:38 -0300
+Processing by FuncionariosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFuncionario Load (0.1ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:78:in `set_funcionario'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/show.html.erb within layouts/application
+  [1m[36mRecebimento Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ? LIMIT ?[0m  [["funcionario_id", 2], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:11
+  Rendered funcionarios/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1052)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2517)
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 0.3ms | Allocations: 3424)
+
+
+Started GET "/funcionarios/2" for 127.0.0.1 at 2024-02-18 18:31:42 -0300
+Processing by FuncionariosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFuncionario Load (0.1ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:78:in `set_funcionario'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/show.html.erb within layouts/application
+  [1m[36mRecebimento Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ? LIMIT ?[0m  [["funcionario_id", 2], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:11
+  Rendered funcionarios/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1019)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2488)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 3395)
+
+
+Started GET "/funcionarios/2/edit" for 127.0.0.1 at 2024-02-18 18:31:43 -0300
+Processing by FuncionariosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFuncionario Load (0.1ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:78:in `set_funcionario'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/edit.html.erb within layouts/application
+  Rendered funcionarios/_form.html.erb (Duration: 1.7ms | Allocations: 1980)
+  Rendered funcionarios/edit.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2380)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3845)
+Completed 200 OK in 13ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 4684)
+
+
+Started GET "/funcionarios" for 127.0.0.1 at 2024-02-18 18:31:43 -0300
+Processing by FuncionariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/index.html.erb within layouts/application
+  [1m[36mFuncionario Load (0.2ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios"[0m
+  ↳ app/views/funcionarios/index.html.erb:20
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered funcionarios/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1330)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2795)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 3105)
+
+
+Started GET "/funcionarios" for 127.0.0.1 at 2024-02-18 18:31:44 -0300
+Processing by FuncionariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/index.html.erb within layouts/application
+  [1m[36mFuncionario Load (0.2ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios"[0m
+  ↳ app/views/funcionarios/index.html.erb:20
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered funcionarios/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1327)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2792)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 3102)
+
+
+Started GET "/funcionarios/2/edit" for 127.0.0.1 at 2024-02-18 18:31:44 -0300
+Processing by FuncionariosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFuncionario Load (0.2ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:78:in `set_funcionario'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/edit.html.erb within layouts/application
+  Rendered funcionarios/_form.html.erb (Duration: 2.9ms | Allocations: 1973)
+  Rendered funcionarios/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2096)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3565)
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 4330)
+
+
+Started GET "/funcionarios" for 127.0.0.1 at 2024-02-18 18:31:46 -0300
+Processing by FuncionariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/index.html.erb within layouts/application
+  [1m[36mFuncionario Load (0.2ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios"[0m
+  ↳ app/views/funcionarios/index.html.erb:20
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.8ms | Allocations: 34)
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered funcionarios/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1345)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2810)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 3120)
+
+
+Started GET "/funcionarios/1" for 127.0.0.1 at 2024-02-18 18:31:48 -0300
+Processing by FuncionariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuncionario Load (0.2ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:78:in `set_funcionario'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/show.html.erb within layouts/application
+  [1m[36mRecebimento Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ? LIMIT ?[0m  [["funcionario_id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:11
+  [1m[36mRecebimento Load (0.2ms)[0m  [1m[34mSELECT "recebimentos".* FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ?[0m  [["funcionario_id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  [1m[36mEncomenda Load (0.2ms)[0m  [1m[34mSELECT "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  Rendered funcionarios/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2486)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3951)
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 0.8ms | Allocations: 4859)
+
+
+Started GET "/funcionarios/1" for 127.0.0.1 at 2024-02-18 18:34:07 -0300
+Processing by FuncionariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuncionario Load (0.2ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:78:in `set_funcionario'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/show.html.erb within layouts/application
+  [1m[36mRecebimento Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ? LIMIT ?[0m  [["funcionario_id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:11
+  [1m[36mRecebimento Load (0.1ms)[0m  [1m[34mSELECT "recebimentos".* FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ?[0m  [["funcionario_id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  [1m[36mEncomenda Load (0.1ms)[0m  [1m[34mSELECT "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  [1m[36mRemetente Load (0.2ms)[0m  [1m[34mSELECT "remetentes".* FROM "remetentes" WHERE "remetentes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:16
+  [1m[36mDestinatario Load (0.2ms)[0m  [1m[34mSELECT "destinatarios".* FROM "destinatarios" WHERE "destinatarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:17
+  [1m[36mTransportadora Load (0.1ms)[0m  [1m[34mSELECT "transportadoras".* FROM "transportadoras" WHERE "transportadoras"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:18
+  Rendered funcionarios/show.html.erb within layouts/application (Duration: 133.7ms | Allocations: 33379)
+  Rendered layout layouts/application.html.erb (Duration: 144.8ms | Allocations: 35364)
+Completed 200 OK in 157ms (Views: 147.2ms | ActiveRecord: 3.2ms | Allocations: 37247)
+
+
+Started GET "/funcionarios" for 127.0.0.1 at 2024-02-18 18:34:14 -0300
+Processing by FuncionariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/index.html.erb within layouts/application
+  [1m[36mFuncionario Load (0.1ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios"[0m
+  ↳ app/views/funcionarios/index.html.erb:20
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.7ms | Allocations: 440)
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered funcionarios/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2538)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4004)
+Completed 200 OK in 13ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 4449)
+
+
+Started GET "/funcionarios/1" for 127.0.0.1 at 2024-02-18 18:34:29 -0300
+Processing by FuncionariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuncionario Load (0.1ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:78:in `set_funcionario'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/show.html.erb within layouts/application
+  [1m[36mRecebimento Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ? LIMIT ?[0m  [["funcionario_id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:11
+  [1m[36mRecebimento Load (0.2ms)[0m  [1m[34mSELECT "recebimentos".* FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ?[0m  [["funcionario_id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  [1m[36mEncomenda Load (0.1ms)[0m  [1m[34mSELECT "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  [1m[36mRemetente Load (0.1ms)[0m  [1m[34mSELECT "remetentes".* FROM "remetentes" WHERE "remetentes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:16
+  [1m[36mDestinatario Load (0.2ms)[0m  [1m[34mSELECT "destinatarios".* FROM "destinatarios" WHERE "destinatarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:17
+  [1m[36mTransportadora Load (0.1ms)[0m  [1m[34mSELECT "transportadoras".* FROM "transportadoras" WHERE "transportadoras"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:18
+  Rendered funcionarios/show.html.erb within layouts/application (Duration: 14.0ms | Allocations: 5602)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 7559)
+Completed 200 OK in 32ms (Views: 25.4ms | ActiveRecord: 1.1ms | Allocations: 9449)
+
+
+Started GET "/funcionarios" for 127.0.0.1 at 2024-02-18 18:35:16 -0300
+Processing by FuncionariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/index.html.erb within layouts/application
+  [1m[36mFuncionario Load (0.2ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios"[0m
+  ↳ app/views/funcionarios/index.html.erb:20
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.7ms | Allocations: 440)
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered funcionarios/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2480)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3945)
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 0.2ms | Allocations: 4354)
+
+
+Started GET "/funcionarios/1" for 127.0.0.1 at 2024-02-18 18:35:19 -0300
+Processing by FuncionariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuncionario Load (0.1ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:78:in `set_funcionario'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/show.html.erb within layouts/application
+  [1m[36mRecebimento Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ? LIMIT ?[0m  [["funcionario_id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:11
+  [1m[36mRecebimento Load (0.1ms)[0m  [1m[34mSELECT "recebimentos".* FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ?[0m  [["funcionario_id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  [1m[36mEncomenda Load (0.1ms)[0m  [1m[34mSELECT "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  [1m[36mRemetente Load (0.1ms)[0m  [1m[34mSELECT "remetentes".* FROM "remetentes" WHERE "remetentes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:16
+  [1m[36mDestinatario Load (0.1ms)[0m  [1m[34mSELECT "destinatarios".* FROM "destinatarios" WHERE "destinatarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:17
+  [1m[36mTransportadora Load (0.1ms)[0m  [1m[34mSELECT "transportadoras".* FROM "transportadoras" WHERE "transportadoras"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:18
+  Rendered funcionarios/show.html.erb within layouts/application (Duration: 11.6ms | Allocations: 4442)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 5907)
+Completed 200 OK in 20ms (Views: 15.9ms | ActiveRecord: 0.9ms | Allocations: 6826)
+
+
+Started GET "/funcionarios/1" for 127.0.0.1 at 2024-02-18 18:35:19 -0300
+Processing by FuncionariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuncionario Load (0.2ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:78:in `set_funcionario'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/show.html.erb within layouts/application
+  [1m[36mRecebimento Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ? LIMIT ?[0m  [["funcionario_id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:11
+  [1m[36mRecebimento Load (0.1ms)[0m  [1m[34mSELECT "recebimentos".* FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ?[0m  [["funcionario_id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  [1m[36mEncomenda Load (0.1ms)[0m  [1m[34mSELECT "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  [1m[36mRemetente Load (0.1ms)[0m  [1m[34mSELECT "remetentes".* FROM "remetentes" WHERE "remetentes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:16
+  [1m[36mDestinatario Load (0.1ms)[0m  [1m[34mSELECT "destinatarios".* FROM "destinatarios" WHERE "destinatarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:17
+  [1m[36mTransportadora Load (0.1ms)[0m  [1m[34mSELECT "transportadoras".* FROM "transportadoras" WHERE "transportadoras"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:18
+  Rendered funcionarios/show.html.erb within layouts/application (Duration: 15.4ms | Allocations: 4433)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 5898)
+Completed 200 OK in 26ms (Views: 20.0ms | ActiveRecord: 1.0ms | Allocations: 6805)
+
+
+Started GET "/funcionarios/1" for 127.0.0.1 at 2024-02-18 18:35:20 -0300
+Processing by FuncionariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuncionario Load (0.2ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:78:in `set_funcionario'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/show.html.erb within layouts/application
+  [1m[36mRecebimento Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ? LIMIT ?[0m  [["funcionario_id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:11
+  [1m[36mRecebimento Load (0.1ms)[0m  [1m[34mSELECT "recebimentos".* FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ?[0m  [["funcionario_id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  [1m[36mEncomenda Load (0.1ms)[0m  [1m[34mSELECT "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  [1m[36mRemetente Load (0.1ms)[0m  [1m[34mSELECT "remetentes".* FROM "remetentes" WHERE "remetentes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:16
+  [1m[36mDestinatario Load (0.1ms)[0m  [1m[34mSELECT "destinatarios".* FROM "destinatarios" WHERE "destinatarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:17
+  [1m[36mTransportadora Load (0.1ms)[0m  [1m[34mSELECT "transportadoras".* FROM "transportadoras" WHERE "transportadoras"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:18
+  Rendered funcionarios/show.html.erb within layouts/application (Duration: 9.1ms | Allocations: 4439)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 5904)
+Completed 200 OK in 18ms (Views: 13.2ms | ActiveRecord: 0.9ms | Allocations: 6811)
+
+
+Started GET "/funcionarios/1" for 127.0.0.1 at 2024-02-18 18:35:34 -0300
+Processing by FuncionariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuncionario Load (0.2ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios" WHERE "funcionarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/funcionarios_controller.rb:78:in `set_funcionario'
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/show.html.erb within layouts/application
+  [1m[36mRecebimento Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ? LIMIT ?[0m  [["funcionario_id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:11
+  [1m[36mRecebimento Load (0.3ms)[0m  [1m[34mSELECT "recebimentos".* FROM "recebimentos" WHERE "recebimentos"."funcionario_id" = ?[0m  [["funcionario_id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  [1m[36mEncomenda Load (0.2ms)[0m  [1m[34mSELECT "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/funcionarios/show.html.erb:12
+  [1m[36mRemetente Load (0.2ms)[0m  [1m[34mSELECT "remetentes".* FROM "remetentes" WHERE "remetentes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:16
+  [1m[36mDestinatario Load (0.2ms)[0m  [1m[34mSELECT "destinatarios".* FROM "destinatarios" WHERE "destinatarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:17
+  [1m[36mTransportadora Load (0.1ms)[0m  [1m[34mSELECT "transportadoras".* FROM "transportadoras" WHERE "transportadoras"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/funcionarios/show.html.erb:18
+  Rendered funcionarios/show.html.erb within layouts/application (Duration: 19.8ms | Allocations: 4439)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 5904)
+Completed 200 OK in 30ms (Views: 23.2ms | ActiveRecord: 1.3ms | Allocations: 6811)
+
+

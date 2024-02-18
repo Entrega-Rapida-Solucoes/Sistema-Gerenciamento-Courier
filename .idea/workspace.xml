@@ -2,43 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea5b790b-b666-4e0b-8a82-a5603a315e95" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/sistema-courier.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Sistema-Gerenciamento-Courier.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Sistema-Gerenciamento-Courier.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/destinatarios_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/destinatarios_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/encomendas_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/encomendas_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/remetentes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/remetentes_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/destinatario.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/destinatario.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/encomenda.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/encomenda.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/endereco.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/endereco.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/funcionarios_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/funcionarios_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/funcionario.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/funcionario.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/remetente.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/remetente.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/destinatarios/_destinatario.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/destinatarios/_destinatario.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/destinatarios/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/destinatarios/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/encomendas/_encomenda.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/encomendas/_encomenda.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/encomendas/_encomenda.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/encomendas/_encomenda.json.jbuilder" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/encomendas/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/encomendas/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/encomendas/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/encomendas/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/remetentes/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/remetentes/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/remetentes/_remetente.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/remetentes/_remetente.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/credentials.yml.enc" beforeDir="false" afterPath="$PROJECT_DIR$/config/credentials.yml.enc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/importmap.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/importmap.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcionarios/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/funcionarios/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcionarios/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/funcionarios/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20240204232816_create_enderecos.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20240204232830_create_funcionarios.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20240204232857_create_destinatarios.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20240204233717_create_remetentes.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20240204233944_create_encomendas.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/encomendas_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/encomendas_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/destinatarios.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/destinatarios.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/encomendas.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/encomendas.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/funcionarios.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/funcionarios.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/system/encomendas_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/encomendas_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +154,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708262723496</updated>
-      <workItem from="1708262724680" duration="10137000" />
+      <workItem from="1708262724680" duration="13393000" />
     </task>
     <servers />
   </component>

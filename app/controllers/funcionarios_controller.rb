@@ -1,13 +1,28 @@
 class FuncionariosController < ApplicationController
   before_action :set_funcionario, only: %i[ show edit update destroy ]
 
+  def search
+    query = params[:query]
+    @funcionarios = Funcionario.where("nome LIKE ? OR cpf LIKE ?", "%#{query}%", "%#{query}%")
+    render :index
+  end
+
   # GET /funcionarios or /funcionarios.json
   def index
     @funcionarios = Funcionario.all
+
+    if params[:nome].present?
+      @funcionarios = @funcionarios.where("nome LIKE ?", "%#{params[:nome]}%")
+    end
+
+    if params[:cpf].present?
+      @funcionarios = @funcionarios.where("cpf LIKE ?", "%#{params[:cpf]}%")
+    end
   end
 
   # GET /funcionarios/1 or /funcionarios/1.json
   def show
+    @recebimentos = @funcionario.recebimentos.includes(:encomenda)
   end
 
   # GET /funcionarios/new

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :recebimentos
   resources :transportadoras
   resources :encomendas
   resources :destinatarios
@@ -10,6 +11,15 @@ Rails.application.routes.draw do
   resources :encomendas do
     collection do
       get 'search'
+    end
+  end
+
+  resources :funcionarios do
+    get 'search', on: :collection
+  end
+  resources :funcionarios do
+    collection do
+      get :search
     end
   end
   # Defines the root path route ("/")
