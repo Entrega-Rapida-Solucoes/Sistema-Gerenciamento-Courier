@@ -26,7 +26,15 @@
 
   <p>
     <strong>Endereco:</strong>
-    <%= destinatario.endereco_id %>
+    <br>
+    <%= destinatario.endereco.logradouro.present? ? "Logradouro: #{destinatario.endereco.logradouro}" : nil %><br>
+    <%= destinatario.endereco.numero.present? ? "Número: #{destinatario.endereco.numero}" : nil %><br>
+    <%= destinatario.endereco.complemento.present? ? "Complemento: #{destinatario.endereco.complemento}" : nil %><br>
+    <%= destinatario.endereco.bairro.present? ? "Bairro: #{destinatario.endereco.bairro}" : nil %><br>
+    <%= destinatario.endereco.cep.present? ? "CEP: #{destinatario.endereco.cep}" : nil %><br>
+    <%= destinatario.endereco.cidade.present? ? "Cidade: #{destinatario.endereco.cidade}" : nil %><br>
+    <%= destinatario.endereco.pais.present? ? "País: #{destinatario.endereco.pais}" : nil %><br>
+    <%= destinatario.endereco.codigo_postal.present? ? "Código Postal: #{destinatario.endereco.codigo_postal}" : nil %><br>
   </p>
 
 </div>

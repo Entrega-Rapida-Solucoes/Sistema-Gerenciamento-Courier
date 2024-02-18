@@ -1,4 +1,5 @@
 class Funcionario < ApplicationRecord
+
   validates :nome, presence: true, length: { in: 2..50 }
   validates :cargo, presence: true, length: { in: 2..30 }
   validates :data_nascimento_valida, presence: true

@@ -17,7 +17,7 @@ class EncomendasControllerTest < ActionDispatch::IntegrationTest
 
   test "should create encomenda" do
     assert_difference("Encomenda.count") do
-      post encomendas_url, params: { encomenda: { data_entrega: @encomenda.data_entrega, destinatario_id: @encomenda.destinatario_id, endereco_id: @encomenda.endereco_id, peso: @encomenda.peso, remetente_id: @encomenda.remetente_id, status: @encomenda.status } }
+      post encomendas_url, params: { encomenda: { data_entrega: @encomenda.data_entrega, destinatario_id: @encomenda.destinatario_id, peso: @encomenda.peso, remetente_id: @encomenda.remetente_id, status: @encomenda.status } }
     end
 
     assert_redirected_to encomenda_url(Encomenda.last)
@@ -34,7 +34,7 @@ class EncomendasControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update encomenda" do
-    patch encomenda_url(@encomenda), params: { encomenda: { data_entrega: @encomenda.data_entrega, destinatario_id: @encomenda.destinatario_id, endereco_id: @encomenda.endereco_id, peso: @encomenda.peso, remetente_id: @encomenda.remetente_id, status: @encomenda.status } }
+    patch encomenda_url(@encomenda), params: { encomenda: { data_entrega: @encomenda.data_entrega, destinatario_id: @encomenda.destinatario_id, peso: @encomenda.peso, remetente_id: @encomenda.remetente_id, status: @encomenda.status } }
     assert_redirected_to encomenda_url(@encomenda)
   end
 

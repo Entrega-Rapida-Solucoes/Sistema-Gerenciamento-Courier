@@ -2,16 +2,12 @@
 
 one:
   nome: MyString
-  cargo: MyString
-  data_nascimento: 2024-02-18
-  cpf: MyString
-  email: MyString
   telefone: MyString
+  cnpj: MyString
+  endereco: one
 
 two:
   nome: MyString
-  cargo: MyString
-  data_nascimento: 2024-02-18
-  cpf: MyString
-  email: MyString
   telefone: MyString
+  cnpj: MyString
+  endereco: two

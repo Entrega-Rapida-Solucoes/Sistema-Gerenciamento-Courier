@@ -16,7 +16,15 @@
 
   <p>
     <strong>Endereco:</strong>
-    <%= remetente.endereco_id %>
+    <br>
+    <%= remetente.endereco.logradouro.present? ? "Logradouro: #{remetente.endereco.logradouro}" : nil %><br>
+    <%= remetente.endereco.numero.present? ? "Número: #{remetente.endereco.numero}" : nil %><br>
+    <%= remetente.endereco.complemento.present? ? "Complemento: #{remetente.endereco.complemento}" : nil %><br>
+    <%= remetente.endereco.bairro.present? ? "Bairro: #{remetente.endereco.bairro}" : nil %><br>
+    <%= remetente.endereco.cep.present? ? "CEP: #{remetente.endereco.cep}" : nil %><br>
+    <%= remetente.endereco.cidade.present? ? "Cidade: #{remetente.endereco.cidade}" : nil %><br>
+    <%= remetente.endereco.pais.present? ? "País: #{remetente.endereco.pais}" : nil %><br>
+    <%= remetente.endereco.codigo_postal.present? ? "Código Postal: #{remetente.endereco.codigo_postal}" : nil %><br>
   </p>
 
 </div>

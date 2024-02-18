@@ -1,10 +1,10 @@
-<%= form_with(model: destinatario) do |form| %>
-  <% if destinatario.errors.any? %>
+<%= form_with(model: transportadora) do |form| %>
+  <% if transportadora.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(destinatario.errors.count, "error") %> prohibited this destinatario from being saved:</h2>
+      <h2><%= pluralize(transportadora.errors.count, "error") %> prohibited this transportadora from being saved:</h2>
 
       <ul>
-        <% destinatario.errors.each do |error| %>
+        <% transportadora.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>
@@ -17,23 +17,13 @@
   </div>
 
   <div>
-    <%= form.label :data_nascimento, style: "display: block" %>
-    <%= form.date_field :data_nascimento %>
-  </div>
-
-  <div>
-    <%= form.label :cpf, style: "display: block" %>
-    <%= form.text_field :cpf %>
-  </div>
-
-  <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div>
     <%= form.label :telefone, style: "display: block" %>
     <%= form.text_field :telefone %>
+  </div>
+
+  <div>
+    <%= form.label :cnpj, style: "display: block" %>
+    <%= form.text_field :cnpj %>
   </div>
 
   <hr style="margin-top: 20px; margin-bottom: 20px;">
@@ -61,9 +51,6 @@
 
       <%= endereco_form.label :pais, style: "display: block" %>
       <%= endereco_form.text_field :pais %>
-
-      <%= endereco_form.label :codigo_postal, style: "display: block" %>
-      <%= endereco_form.text_field :codigo_postal %>
     <% end %>
   </div>
 

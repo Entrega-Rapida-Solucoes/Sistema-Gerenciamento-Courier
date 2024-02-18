@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Transportadoras</h1>
+
+<div id="transportadoras">
+  <% @transportadoras.each do |transportadora| %>
+    <%= render transportadora %>
+    <p>
+      <%= link_to "Show this transportadora", transportadora %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New transportadora", new_transportadora_path %>

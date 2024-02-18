@@ -1,0 +1,30 @@
+<div id="<%= dom_id transportadora %>">
+  <p>
+    <strong>Nome:</strong>
+    <%= transportadora.nome %>
+  </p>
+
+  <p>
+    <strong>Telefone:</strong>
+    <%= transportadora.telefone %>
+  </p>
+
+  <p>
+    <strong>CNPJ:</strong>
+    <%= transportadora.cnpj %>
+  </p>
+
+  <p>
+    <strong>Endereco:</strong>
+    <br>
+    <%= transportadora.endereco.logradouro.present? ? "Logradouro: #{transportadora.endereco.logradouro}" : nil %><br>
+    <%= transportadora.endereco.numero.present? ? "Número: #{transportadora.endereco.numero}" : nil %><br>
+    <%= transportadora.endereco.complemento.present? ? "Complemento: #{transportadora.endereco.complemento}" : nil %><br>
+    <%= transportadora.endereco.bairro.present? ? "Bairro: #{transportadora.endereco.bairro}" : nil %><br>
+    <%= transportadora.endereco.cep.present? ? "CEP: #{transportadora.endereco.cep}" : nil %><br>
+    <%= transportadora.endereco.cidade.present? ? "Cidade: #{transportadora.endereco.cidade}" : nil %><br>
+    <%= transportadora.endereco.pais.present? ? "País: #{transportadora.endereco.pais}" : nil %><br>
+    <%= transportadora.endereco.codigo_postal.present? ? "Código Postal: #{transportadora.endereco.codigo_postal}" : nil %><br>
+  </p>
+
+</div>

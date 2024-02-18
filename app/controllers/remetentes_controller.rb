@@ -13,6 +13,7 @@ class RemetentesController < ApplicationController
   # GET /remetentes/new
   def new
     @remetente = Remetente.new
+    @remetente.build_endereco
   end
 
   # GET /remetentes/1/edit
@@ -65,6 +66,6 @@ class RemetentesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def remetente_params
-      params.require(:remetente).permit(:nome, :email, :telefone, :endereco_id)
+      params.require(:remetente).permit(:nome, :email, :telefone, endereco_attributes: [:cep, :logradouro, :numero, :complemento, :cidade, :bairro, :pais, :codigo_postal])
     end
 end

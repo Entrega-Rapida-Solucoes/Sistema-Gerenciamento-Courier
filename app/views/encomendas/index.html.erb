@@ -2,6 +2,25 @@
 
 <h1>Encomendas</h1>
 
+<%= form_tag(encomendas_path, method: :get, class: "search-form") do %>
+  <div class="field">
+    <%= label_tag 'Data de Entrega' %>
+    <%= text_field_tag 'data_entrega', params[:data_entrega] %>
+  </div>
+
+  <div class="field">
+    <%= label_tag 'Peso' %>
+    <%= text_field_tag 'peso', params[:peso] %>
+  </div>
+
+  <div class="field">
+    <%= label_tag 'Transportadora' %>
+    <%= select_tag 'transportadora_id', options_from_collection_for_select(Transportadora.all, 'id', 'nome', params[:transportadora_id]), prompt: 'Todas as transportadoras' %>
+  </div>
+
+  <%= submit_tag 'Buscar' %>
+<% end %>
+
 <div id="encomendas">
   <% @encomendas.each do |encomenda| %>
     <%= render encomenda %>

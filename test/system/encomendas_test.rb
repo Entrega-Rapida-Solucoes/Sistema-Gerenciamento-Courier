@@ -16,7 +16,6 @@ class EncomendasTest < ApplicationSystemTestCase
 
     fill_in "Data entrega", with: @encomenda.data_entrega
     fill_in "Destinatario", with: @encomenda.destinatario_id
-    fill_in "Endereco", with: @encomenda.endereco_id
     fill_in "Peso", with: @encomenda.peso
     fill_in "Remetente", with: @encomenda.remetente_id
     fill_in "Status", with: @encomenda.status
@@ -32,7 +31,6 @@ class EncomendasTest < ApplicationSystemTestCase
 
     fill_in "Data entrega", with: @encomenda.data_entrega
     fill_in "Destinatario", with: @encomenda.destinatario_id
-    fill_in "Endereco", with: @encomenda.endereco_id
     fill_in "Peso", with: @encomenda.peso
     fill_in "Remetente", with: @encomenda.remetente_id
     fill_in "Status", with: @encomenda.status

@@ -1,7 +1,4 @@
 class Endereco < ApplicationRecord
-  belongs_to :destinatario
-  belongs_to :remetente
-  belongs_to :encomenda
 
   validates :logradouro, presence: true, length: {in: 3..30}
   validates :complemento, length: {in: 2..10}
@@ -13,4 +10,3 @@ class Endereco < ApplicationRecord
   validates :pais, length: { maximum: 20 }, allow_blank: true
   validates :codigo_postal, length: { maximum: 20 }, allow_blank: true
 end
-
