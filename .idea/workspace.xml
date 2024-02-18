@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea5b790b-b666-4e0b-8a82-a5603a315e95" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/funcionarios_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/funcionarios_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/funcionario.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/funcionario.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/funcionarios/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/funcionarios/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/funcionarios/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/funcionarios/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +146,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708262723496</updated>
-      <workItem from="1708262724680" duration="13393000" />
+      <workItem from="1708262724680" duration="13496000" />
     </task>
     <servers />
   </component>
