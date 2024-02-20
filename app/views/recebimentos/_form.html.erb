@@ -1,0 +1,32 @@
+<%= form_with(model: recebimento) do |form| %>
+  <% if recebimento.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(recebimento.errors.count, "error") %> prohibited this recebimento from being saved:</h2>
+
+      <ul>
+        <% recebimento.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :data_recebimento, style: "display: block" %>
+    <%= form.date_field :data_recebimento %>
+  </div>
+
+  <div>
+    <%= form.label :funcionario_id, style: "display: block" %>
+    <%= form.text_field :funcionario_id %>
+  </div>
+
+  <div>
+    <%= form.label :encomenda_id, style: "display: block" %>
+    <%= form.text_field :encomenda_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @transportadora %>
+
+<div>
+  <%= link_to "Editar transportadora", edit_transportadora_path(@transportadora) %> |
+  <%= link_to "Ver todas as transportadoras", transportadoras_path %>
+
+  <%= button_to "Deletar", @transportadora, method: :delete %>
+
+  <p style="color: red">Atenção: Caso a transportadora possua dependências/relacionamentos, precisam ser excluídas manualmente antes de remover.</p>
+
+</div>
+

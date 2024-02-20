@@ -1,0 +1,29 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Funcionarios</h1>
+
+<%= form_tag(funcionarios_path, method: :get, class: "search-form") do %>
+  <div class="field">
+    <%= label_tag 'Nome' %>
+    <%= text_field_tag 'nome', params[:nome] %>
+  </div>
+
+  <div class="field">
+    <%= label_tag 'CPF' %>
+    <%= text_field_tag 'cpf', params[:cpf] %>
+  </div>
+
+  <%= submit_tag 'Buscar' %>
+<% end %>
+
+<div id="funcionarios">
+  <% @funcionarios.each do |funcionario| %>
+    <%= render funcionario %>
+    <p>
+      <%= link_to "Show this funcionario", funcionario %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New funcionario", new_funcionario_path %>
+

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @destinatario %>
+
+<div>
+  <%= link_to "Edit this destinatario", edit_destinatario_path(@destinatario) %> |
+  <%= link_to "Back to destinatarios", destinatarios_path %>
+
+  <%= button_to "Destroy this destinatario", @destinatario, method: :delete %>
+</div>

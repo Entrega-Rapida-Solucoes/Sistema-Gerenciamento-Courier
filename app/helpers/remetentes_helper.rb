@@ -1,0 +1,2 @@
+module RemetentesHelper
+end

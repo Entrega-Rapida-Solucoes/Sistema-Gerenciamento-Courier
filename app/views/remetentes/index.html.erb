@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Remetentes</h1>
+
+<div id="remetentes">
+  <% @remetentes.each do |remetente| %>
+    <%= render remetente %>
+    <p>
+      <%= link_to "Show this remetente", remetente %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New remetente", new_remetente_path %>

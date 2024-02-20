@@ -1,0 +1,31 @@
+<p style="color: green"><%= notice %></p>
+
+<h1><%= @funcionario.nome %></h1>
+<p>Cargo: <%= @funcionario.cargo %></p>
+<p>Data de Nascimento: <%= @funcionario.data_nascimento %></p>
+<p>CPF: <%= @funcionario.cpf %></p>
+<p>Email: <%= @funcionario.email %></p>
+<p>Telefone: <%= @funcionario.telefone %></p>
+
+<h2>Histórico de Encomendas Recebidas</h2>
+<% if @recebimentos.any? %>
+  <% @recebimentos.each do |recebimento| %>
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+      <p><strong>Peso:</strong> <%= recebimento.encomenda.peso %> kg</p>
+      <p><strong>Status:</strong> <%= recebimento.encomenda.status %></p>
+      <p><strong>Remetente:</strong> <%= recebimento.encomenda.remetente.nome %></p>
+      <p><strong>Destinatario:</strong> <%= recebimento.encomenda.destinatario.nome %></p>
+      <p><strong>Transportadora:</strong> <%= recebimento.encomenda.transportadora.nome %></p>
+      <p><strong>Data de Recebimento:</strong> <%= recebimento.data_recebimento %></p>
+    </div>
+  <% end %>
+<% else %>
+  <p>Nenhum histórico de encomendas disponível.</p>
+<% end %>
+
+<div>
+  <%= link_to "Edit this funcionario", edit_funcionario_path(@funcionario) %> |
+  <%= link_to "Back to funcionarios", funcionarios_path %>
+  <%= button_to "Destroy this funcionario", @funcionario, method: :delete %>
+</div>
+
