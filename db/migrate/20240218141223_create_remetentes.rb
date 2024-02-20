@@ -4,7 +4,7 @@ class CreateRemetentes < ActiveRecord::Migration[7.0]
       t.string :nome
       t.string :email
       t.string :telefone
-      t.references :endereco, null: false, foreign_key: true
+      t.references :endereco, foreign_key: true
 
       t.timestamps
     end

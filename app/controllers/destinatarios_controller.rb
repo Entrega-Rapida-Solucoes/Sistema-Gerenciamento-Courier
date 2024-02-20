@@ -13,6 +13,7 @@ class DestinatariosController < ApplicationController
   # GET /destinatarios/new
   def new
     @destinatario = Destinatario.new
+    @destinatario.build_endereco
   end
 
   # GET /destinatarios/1/edit
@@ -65,6 +66,6 @@ class DestinatariosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def destinatario_params
-      params.require(:destinatario).permit(:nome, :data_nascimento, :cpf, :email, :telefone, :endereco_id)
+      params.require(:destinatario).permit(:nome, :data_nascimento, :cpf, :email, :telefone, endereco_attributes: [:cep, :logradouro, :numero, :complemento, :cidade, :bairro, :pais, :codigo_postal])
     end
 end

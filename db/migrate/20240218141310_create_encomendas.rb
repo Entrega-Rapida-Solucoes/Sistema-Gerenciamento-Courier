@@ -6,6 +6,7 @@ class CreateEncomendas < ActiveRecord::Migration[7.0]
       t.date :data_entrega
       t.references :destinatario, null: false, foreign_key: true
       t.references :remetente, null: false, foreign_key: true
+      t.references :transportadora, foreign_key: true
 
       t.timestamps
     end

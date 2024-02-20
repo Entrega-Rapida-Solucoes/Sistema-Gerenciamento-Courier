@@ -32,3 +32,4 @@ O funcionário deve ser capaz de gerenciar o sistema realizando o cadastro do re
 ## ⚠️STATUS DO PROJETO
 
 Em andamento.
+

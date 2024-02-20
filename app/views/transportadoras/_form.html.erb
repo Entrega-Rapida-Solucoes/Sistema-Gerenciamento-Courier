@@ -1,0 +1,60 @@
+<%= form_with(model: transportadora) do |form| %>
+  <% if transportadora.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(transportadora.errors.count, "error") %> prohibited this transportadora from being saved:</h2>
+
+      <ul>
+        <% transportadora.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :telefone, style: "display: block" %>
+    <%= form.text_field :telefone %>
+  </div>
+
+  <div>
+    <%= form.label :cnpj, style: "display: block" %>
+    <%= form.text_field :cnpj %>
+  </div>
+
+  <hr style="margin-top: 20px; margin-bottom: 20px;">
+  <h3>Endereço</h3>
+
+  <div>
+    <%= form.fields_for :endereco do |endereco_form| %>
+      <%= endereco_form.label :cep, style: "display: block" %>
+      <%= endereco_form.text_field :cep %>
+
+      <%= endereco_form.label :logradouro, style: "display: block" %>
+      <%= endereco_form.text_field :logradouro %>
+
+      <%= endereco_form.label :numero, style: "display: block" %>
+      <%= endereco_form.text_field :numero %>
+
+      <%= endereco_form.label :complemento, style: "display: block" %>
+      <%= endereco_form.text_field :complemento %>
+
+      <%= endereco_form.label :cidade, style: "display: block" %>
+      <%= endereco_form.text_field :cidade %>
+
+      <%= endereco_form.label :bairro, style: "display: block" %>
+      <%= endereco_form.text_field :bairro %>
+
+      <%= endereco_form.label :pais, style: "display: block" %>
+      <%= endereco_form.text_field :pais %>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

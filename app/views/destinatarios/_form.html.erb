@@ -36,9 +36,35 @@
     <%= form.text_field :telefone %>
   </div>
 
+  <hr style="margin-top: 20px; margin-bottom: 20px;">
+  <h3>Endereço</h3>
+
   <div>
-    <%= form.label :endereco_id, style: "display: block" %>
-    <%= form.text_field :endereco_id %>
+    <%= form.fields_for :endereco do |endereco_form| %>
+      <%= endereco_form.label :cep, style: "display: block" %>
+      <%= endereco_form.text_field :cep %>
+
+      <%= endereco_form.label :logradouro, style: "display: block" %>
+      <%= endereco_form.text_field :logradouro %>
+
+      <%= endereco_form.label :numero, style: "display: block" %>
+      <%= endereco_form.text_field :numero %>
+
+      <%= endereco_form.label :complemento, style: "display: block" %>
+      <%= endereco_form.text_field :complemento %>
+
+      <%= endereco_form.label :cidade, style: "display: block" %>
+      <%= endereco_form.text_field :cidade %>
+
+      <%= endereco_form.label :bairro, style: "display: block" %>
+      <%= endereco_form.text_field :bairro %>
+
+      <%= endereco_form.label :pais, style: "display: block" %>
+      <%= endereco_form.text_field :pais %>
+
+      <%= endereco_form.label :codigo_postal, style: "display: block" %>
+      <%= endereco_form.text_field :codigo_postal %>
+    <% end %>
   </div>
 
   <div>

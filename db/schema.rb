@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_02_04_233944) do
+ActiveRecord::Schema[7.0].define(version: 2024_02_18_210103) do
   create_table "destinatarios", force: :cascade do |t|
     t.string "nome"
     t.date "data_nascimento"
@@ -27,14 +27,14 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_04_233944) do
     t.float "peso"
     t.string "status"
     t.date "data_entrega"
-    t.integer "endereco_id", null: false
     t.integer "destinatario_id", null: false
     t.integer "remetente_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "transportadora_id", null: false
     t.index ["destinatario_id"], name: "index_encomendas_on_destinatario_id"
-    t.index ["endereco_id"], name: "index_encomendas_on_endereco_id"
     t.index ["remetente_id"], name: "index_encomendas_on_remetente_id"
+    t.index ["transportadora_id"], name: "index_encomendas_on_transportadora_id"
   end
 
   create_table "enderecos", force: :cascade do |t|
@@ -61,6 +61,16 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_04_233944) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "recebimentos", force: :cascade do |t|
+    t.date "data_recebimento"
+    t.integer "funcionario_id", null: false
+    t.integer "encomenda_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["encomenda_id"], name: "index_recebimentos_on_encomenda_id"
+    t.index ["funcionario_id"], name: "index_recebimentos_on_funcionario_id"
+  end
+
   create_table "remetentes", force: :cascade do |t|
     t.string "nome"
     t.string "email"
@@ -71,9 +81,22 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_04_233944) do
     t.index ["endereco_id"], name: "index_remetentes_on_endereco_id"
   end
 
+  create_table "transportadoras", force: :cascade do |t|
+    t.string "nome"
+    t.string "telefone"
+    t.string "cnpj"
+    t.integer "endereco_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["endereco_id"], name: "index_transportadoras_on_endereco_id"
+  end
+
   add_foreign_key "destinatarios", "enderecos"
   add_foreign_key "encomendas", "destinatarios"
-  add_foreign_key "encomendas", "enderecos"
   add_foreign_key "encomendas", "remetentes"
+  add_foreign_key "encomendas", "transportadoras"
+  add_foreign_key "recebimentos", "encomendas"
+  add_foreign_key "recebimentos", "funcionarios"
   add_foreign_key "remetentes", "enderecos"
+  add_foreign_key "transportadoras", "enderecos"
 end

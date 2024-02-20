@@ -3,15 +3,13 @@
 one:
   peso: 1.5
   status: MyString
-  data_entrega: 2024-02-04
-  endereco: one
+  data_entrega: 2024-02-18
   destinatario: one
   remetente: one
 
 two:
   peso: 1.5
   status: MyString
-  data_entrega: 2024-02-04
-  endereco: two
+  data_entrega: 2024-02-18
   destinatario: two
   remetente: two

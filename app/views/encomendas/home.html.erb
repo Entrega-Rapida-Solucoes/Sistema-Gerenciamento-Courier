@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Página Inicial</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 20px;
+          text-align: center;
+          background-color: #007bff; /* Fundo azul */
+      }
+
+      h1 {
+          color: #fff; /* Cor das letras branca */
+          font-size: 32px;
+      }
+
+      h2 {
+          color: #fff; /* Cor das letras branca */
+          font-size: 24px;
+          margin-top: 40px;
+      }
+
+      button {
+          background-color: #fff; /* Botões brancos */
+          border: none;
+          color: #007bff; /* Cor das letras azul */
+          padding: .9rem 4rem;
+          border-radius: 3rem;
+          display: inline-block;
+          box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.2);
+          transition: background-color 0.3s ease;
+          font-weight: bold; /* Torna a letra do botão mais encorpada */
+          font-family: "Helvetica Neue", Arial, sans-serif; /* Exemplo de fonte bonita */
+      }
+
+      button:hover {
+          background-color: #BBBBBB;
+      }
+  </style>
+</head>
+<body>
+<h1>Gerenciamento de Courier</h1>
+
+<h2>Encomendas</h2>
+<form action="/encomendas" method="get">
+  <button type="submit">Aba de encomendas</button>
+</form>
+
+<h2>Funcionarios</h2>
+<form action="/funcionarios" method="get">
+  <button type="submit">Aba de funcionarios</button>
+</form>
+
+<h2>Destinatarios</h2>
+
+<form action="/destinatarios" method="get">
+  <button type="submit">Aba dos destinatarios</button>
+</form>
+
+<h2>Remetente</h2>
+<form action="/remetentes" method="get">
+  <button type="submit">Aba dos remetentes</button>
+</form>
+
+<h2>Transportadora</h2>
+<form action="/transportadoras" method="get">
+  <button type="submit">Aba dos transportadoras</button>
+</form>
+
+<h2>Recebimento</h2>
+<form action="/recebimentos" method="get">
+  <button type="submit">Aba dos recebimentos</button>
+</form>
+
+</body>

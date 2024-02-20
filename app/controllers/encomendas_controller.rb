@@ -1,9 +1,26 @@
 class EncomendasController < ApplicationController
   before_action :set_encomenda, only: %i[ show edit update destroy ]
 
+  def search
+    data_entrega = params[:data_entrega]
+    peso = params[:peso]
+    transportadora_id = params[:transportadora_id]
+
+    @encomendas = Encomenda.search(data_entrega, peso, transportadora_id)
+
+    respond_to do |format|
+      format.html { render :index }
+      format.json { render json: @encomendas }
+    end
+  end
+
   # GET /encomendas or /encomendas.json
   def index
     @encomendas = Encomenda.all
+
+    if params[:data_entrega].present? || params[:peso].present? || params[:transportadora_id].present?
+      @encomendas = Encomenda.search(params[:data_entrega], params[:peso], params[:transportadora_id])
+    end
   end
 
   # GET /encomendas/1 or /encomendas/1.json
@@ -65,6 +82,6 @@ class EncomendasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def encomenda_params
-      params.require(:encomenda).permit(:peso, :status, :data_entrega, :destinatario_id, :remetente_id)
+      params.require(:encomenda).permit(:peso, :status, :data_entrega, :destinatario_id, :remetente_id, :transportadora_id)
     end
 end
