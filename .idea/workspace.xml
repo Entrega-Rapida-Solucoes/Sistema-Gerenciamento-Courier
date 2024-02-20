@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea5b790b-b666-4e0b-8a82-a5603a315e95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/features/busca_funcionario.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/funcionarios.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/step_definitions/busca_funcionario_steps.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/step_definitions/funcionarios_steps.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/step_definitions/transportadora_steps.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/transportadora.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Sistema-Gerenciamento-Courier.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Sistema-Gerenciamento-Courier.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/transportadoras/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/transportadoras/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/transportadoras/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/transportadoras/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/destinatario_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/destinatario_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/encomenda_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/encomenda_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/endereco_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/endereco_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/funcionario_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/funcionario_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/recebimento_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/recebimento_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/remetente_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/remetente_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/transportadora_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/transportadora_test.rb" afterDir="false" />
-    </list>
+    <list default="true" id="ea5b790b-b666-4e0b-8a82-a5603a315e95" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,7 +179,7 @@
       <updated>1708262723496</updated>
       <workItem from="1708262724680" duration="16896000" />
       <workItem from="1708388470936" duration="2360000" />
-      <workItem from="1708425046851" duration="4362000" />
+      <workItem from="1708425046851" duration="4691000" />
     </task>
     <servers />
   </component>
@@ -224,6 +199,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Sistema_Gerenciamento_Courier@Development__Sistema_Gerenciamento_Courier.rcov" NAME="Development: Sistema-Gerenciamento-Courier Coverage Results" MODIFIED="1708425978568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Sistema-Gerenciamento-Courier" />
-    <SUITE FILE_PATH="coverage/Sistema_Gerenciamento_Courier@transportadora_test_rb.rcov" NAME="transportadora_test.rb Coverage Results" MODIFIED="1708429356569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Sistema-Gerenciamento-Courier" />
+    <SUITE FILE_PATH="coverage/Sistema_Gerenciamento_Courier@transportadora_test_rb.rcov" NAME="transportadora_test.rb Coverage Results" MODIFIED="1708429442490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Sistema-Gerenciamento-Courier" />
   </component>
 </project>
