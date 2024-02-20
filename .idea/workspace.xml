@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea5b790b-b666-4e0b-8a82-a5603a315e95" name="Changes" comment="" />
+    <list default="true" id="ea5b790b-b666-4e0b-8a82-a5603a315e95" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/encomendas/home.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +36,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.transportadora_test.rb">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nicol\OneDrive\Documentos\Projeto ES\Sistema-Gerenciamento-Courier\app\views\encomendas" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Rails.Development: Sistema-Gerenciamento-Courier">
     <configuration default="true" type="RackRunConfigurationType" factoryName="Rack">
       <RACK_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
       <RACK_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
@@ -155,7 +165,7 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPTS_PATHS" VALUE="$MODULE_DIR$/test/models/transportadora_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="CUSTOM_SET_OF_FILES" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
@@ -179,7 +189,8 @@
       <updated>1708262723496</updated>
       <workItem from="1708262724680" duration="16896000" />
       <workItem from="1708388470936" duration="2360000" />
-      <workItem from="1708425046851" duration="4691000" />
+      <workItem from="1708425046851" duration="5044000" />
+      <workItem from="1708448535863" duration="1202000" />
     </task>
     <servers />
   </component>
@@ -198,7 +209,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Sistema_Gerenciamento_Courier@Development__Sistema_Gerenciamento_Courier.rcov" NAME="Development: Sistema-Gerenciamento-Courier Coverage Results" MODIFIED="1708425978568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Sistema-Gerenciamento-Courier" />
-    <SUITE FILE_PATH="coverage/Sistema_Gerenciamento_Courier@transportadora_test_rb.rcov" NAME="transportadora_test.rb Coverage Results" MODIFIED="1708429442490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Sistema-Gerenciamento-Courier" />
+    <SUITE FILE_PATH="coverage/Sistema_Gerenciamento_Courier@Development__Sistema_Gerenciamento_Courier.rcov" NAME="Development: Sistema-Gerenciamento-Courier Coverage Results" MODIFIED="1708449523952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Sistema-Gerenciamento-Courier" />
+    <SUITE FILE_PATH="coverage/Sistema_Gerenciamento_Courier@transportadora_test_rb.rcov" NAME="transportadora_test.rb Coverage Results" MODIFIED="1708449496171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Sistema-Gerenciamento-Courier" />
   </component>
 </project>

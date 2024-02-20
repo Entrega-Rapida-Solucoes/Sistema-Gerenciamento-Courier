@@ -4217,3 +4217,121 @@ Processing by TransportadorasController#create as TURBO_STREAM
 Completed 422 Unprocessable Entity in 18ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 17905)
 
 
+Started GET "/" for 127.0.0.1 at 2024-02-20 14:18:53 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.6ms | Allocations: 824)
+Completed 200 OK in 98ms (Views: 29.4ms | ActiveRecord: 0.0ms | Allocations: 8324)
+
+
+Started GET "/home" for 127.0.0.1 at 2024-02-20 14:18:59 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/" for 127.0.0.1 at 2024-02-20 14:20:14 -0300
+  
+ActionController::RoutingError (uninitialized constant LayoutsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2024-02-20 14:21:51 -0300
+Processing by EncomendasController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering encomendas/home.html.erb within layouts/application
+  Rendered encomendas/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 321)
+  Rendered layout layouts/application.html.erb (Duration: 143.0ms | Allocations: 37201)
+Completed 200 OK in 151ms (Views: 148.5ms | ActiveRecord: 0.0ms | Allocations: 38460)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2024-02-20 14:21:58 -0300
+Processing by EncomendasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering encomendas/index.html.erb within layouts/application
+  [1m[36mTransportadora Load (0.4ms)[0m  [1m[34mSELECT "transportadoras".* FROM "transportadoras"[0m
+  ↳ app/views/encomendas/index.html.erb:18
+  [1m[36mEncomenda Load (0.6ms)[0m  [1m[34mSELECT "encomendas".* FROM "encomendas"[0m
+  ↳ app/views/encomendas/index.html.erb:25
+  Rendered encomendas/_encomenda.html.erb (Duration: 6.3ms | Allocations: 539)
+  Rendered encomendas/_encomenda.html.erb (Duration: 0.5ms | Allocations: 33)
+  Rendered encomendas/index.html.erb within layouts/application (Duration: 121.7ms | Allocations: 33443)
+  Rendered layout layouts/application.html.erb (Duration: 135.6ms | Allocations: 35038)
+Completed 200 OK in 206ms (Views: 132.2ms | ActiveRecord: 5.8ms | Allocations: 40698)
+
+
+Started GET "/funcionarios" for 127.0.0.1 at 2024-02-20 14:22:01 -0300
+Processing by FuncionariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering funcionarios/index.html.erb within layouts/application
+  [1m[36mFuncionario Load (0.6ms)[0m  [1m[34mSELECT "funcionarios".* FROM "funcionarios"[0m
+  ↳ app/views/funcionarios/index.html.erb:20
+  Rendered funcionarios/_funcionario.html.erb (Duration: 4.0ms | Allocations: 471)
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.2ms | Allocations: 33)
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered funcionarios/_funcionario.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered funcionarios/index.html.erb within layouts/application (Duration: 42.2ms | Allocations: 14729)
+  Rendered layout layouts/application.html.erb (Duration: 57.5ms | Allocations: 16397)
+Completed 200 OK in 114ms (Views: 68.0ms | ActiveRecord: 2.0ms | Allocations: 20862)
+
+
+Started GET "/destinatarios" for 127.0.0.1 at 2024-02-20 14:22:06 -0300
+Processing by DestinatariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering destinatarios/index.html.erb within layouts/application
+  [1m[36mDestinatario Load (0.5ms)[0m  [1m[34mSELECT "destinatarios".* FROM "destinatarios"[0m
+  ↳ app/views/destinatarios/index.html.erb:6
+  [1m[36mEndereco Load (1.3ms)[0m  [1m[34mSELECT "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/destinatarios/_destinatario.html.erb:30
+  Rendered destinatarios/_destinatario.html.erb (Duration: 101.9ms | Allocations: 22997)
+  Rendered destinatarios/index.html.erb within layouts/application (Duration: 126.0ms | Allocations: 27083)
+  Rendered layout layouts/application.html.erb (Duration: 138.2ms | Allocations: 28772)
+Completed 200 OK in 176ms (Views: 144.8ms | ActiveRecord: 5.7ms | Allocations: 32426)
+
+
+Started GET "/remetentes" for 127.0.0.1 at 2024-02-20 14:22:08 -0300
+Processing by RemetentesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering remetentes/index.html.erb within layouts/application
+  [1m[36mRemetente Load (0.9ms)[0m  [1m[34mSELECT "remetentes".* FROM "remetentes"[0m
+  ↳ app/views/remetentes/index.html.erb:6
+  [1m[36mEndereco Load (0.5ms)[0m  [1m[34mSELECT "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/remetentes/_remetente.html.erb:20
+  Rendered remetentes/_remetente.html.erb (Duration: 15.6ms | Allocations: 3022)
+  Rendered remetentes/index.html.erb within layouts/application (Duration: 35.9ms | Allocations: 6648)
+  Rendered layout layouts/application.html.erb (Duration: 47.3ms | Allocations: 8329)
+Completed 200 OK in 87ms (Views: 59.5ms | ActiveRecord: 2.8ms | Allocations: 11851)
+
+
+Started GET "/transportadoras" for 127.0.0.1 at 2024-02-20 14:22:14 -0300
+Processing by TransportadorasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering transportadoras/index.html.erb within layouts/application
+  [1m[36mTransportadora Load (0.5ms)[0m  [1m[34mSELECT "transportadoras".* FROM "transportadoras"[0m
+  ↳ app/views/transportadoras/index.html.erb:6
+  [1m[36mEndereco Load (0.6ms)[0m  [1m[34mSELECT "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/transportadoras/_transportadora.html.erb:20
+  Rendered transportadoras/_transportadora.html.erb (Duration: 16.0ms | Allocations: 2985)
+  [1m[36mEndereco Load (0.4ms)[0m  [1m[34mSELECT "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/transportadoras/_transportadora.html.erb:20
+  Rendered transportadoras/_transportadora.html.erb (Duration: 7.5ms | Allocations: 729)
+  Rendered transportadoras/index.html.erb within layouts/application (Duration: 40.1ms | Allocations: 5490)
+  Rendered layout layouts/application.html.erb (Duration: 56.7ms | Allocations: 7173)
+Completed 200 OK in 83ms (Views: 67.5ms | ActiveRecord: 1.4ms | Allocations: 8398)
+
+
+Started GET "/recebimentos" for 127.0.0.1 at 2024-02-20 14:22:17 -0300
+Processing by RecebimentosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recebimentos/index.html.erb within layouts/application
+  [1m[36mRecebimento Load (0.6ms)[0m  [1m[34mSELECT "recebimentos".* FROM "recebimentos"[0m
+  ↳ app/views/recebimentos/index.html.erb:6
+  Rendered recebimentos/_recebimento.html.erb (Duration: 3.9ms | Allocations: 341)
+  Rendered recebimentos/index.html.erb within layouts/application (Duration: 36.4ms | Allocations: 12209)
+  Rendered layout layouts/application.html.erb (Duration: 50.1ms | Allocations: 13890)
+Completed 200 OK in 87ms (Views: 62.1ms | ActiveRecord: 2.0ms | Allocations: 17615)
+
+
